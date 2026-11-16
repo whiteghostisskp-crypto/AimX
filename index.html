@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="AimX Free Fire sensitivity starter settings">
+  <title>AimX — Sensitivity Studio</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="logo">A</span><div><b>AIMX</b><small>SENSITIVITY STUDIO</small></div></div>
+    <button id="installBtn" class="install" hidden>Install app</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FREE FIRE • SETTINGS HELPER</p>
+      <h1>Find your <span>control.</span></h1>
+      <p class="sub">Create a sensible starting point, then adjust it in training mode to match your comfort.</p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">YOUR SETUP</p><h2>Device & playstyle</h2></div><span class="tag">01 / 03</span></div>
+      <label for="device">Device profile</label>
+      <select id="device">
+        <option value="vivo">Vivo Y16</option>
+        <option value="entry">Entry-level Android</option>
+        <option value="mid">Mid-range Android</option>
+        <option value="high">High-end Android</option>
+        <option value="iphone">iPhone</option>
+        <option value="tablet">Tablet</option>
+      </select>
+      <div class="two">
+        <div><label for="style">Playstyle</label><select id="style"><option value="balanced">Balanced</option><option value="rush">Rush / close range</option><option value="precision">Precision</option><option value="drag">Drag practice</option></select></div>
+        <div><label for="fingers">Controls</label><select id="fingers"><option value="2">2 fingers</option><option value="3">3 fingers</option><option value="4">4 fingers</option><option value="5">5 fingers</option></select></div>
+      </div>
+      <button id="generate" class="primary">Generate my settings <span>↗</span></button>
+    </section>
+
+    <section class="panel results">
+      <div class="panel-head"><div><p class="eyebrow">YOUR STARTING POINT</p><h2>Recommended sensitivity</h2></div><span class="tag">02 / 03</span></div>
+      <p class="hint">Values are suggestions, not official settings. Test them and make small changes based on your own control.</p>
+      <div id="values" class="values"></div>
+      <div class="actions"><button id="copy" class="secondary">Copy values</button><button id="save" class="secondary">Save profile</button></div>
+      <p id="status" class="status" aria-live="polite"></p>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head"><div><p class="eyebrow">YOUR PROFILES</p><h2>Saved settings</h2></div><span class="tag">03 / 03</span></div>
+      <div id="saved" class="saved"><p class="hint">No saved profiles yet. Generate settings and tap “Save profile”.</p></div>
+    </section>
+    <p class="note">AimX is an independent settings helper and is not affiliated with Garena. It does not modify the game or guarantee headshots. Avoid third-party scripts, macros, and modified game clients.</p>
+  </main>
+  <footer> AIMX <span>BUILT FOR BETTER CONTROL</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
